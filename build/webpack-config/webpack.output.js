@@ -4,7 +4,7 @@ module.exports = (production = false) => {
   return {
     output: production
       ? {
-          path: path.resolve(__dirname, '../../dist/admin'),
+          path: path.resolve(__dirname, '../../dist'),
           filename: 'static/[name]/index.[chunkhash].js',
           chunkFilename: 'static/[name].[id].[chunkhash].js',
           publicPath: 'http://8.129.90.25:9000/admin/',

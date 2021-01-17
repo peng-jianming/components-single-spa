@@ -66,7 +66,7 @@ const eslintLoaderConfigure = () => {
 };
 
 const baseConfig = {
-  entry: path.resolve(__dirname, '../src/entry.js'),
+  entry: path.resolve(__dirname, '../src/page/entry.js'),
   module: {
     rules: [
       imageLoaderConfigure(),
