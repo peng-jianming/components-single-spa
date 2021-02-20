@@ -15,7 +15,7 @@ module.exports = (production = false) => {
           path: path.resolve(__dirname, '../../dist'),
           filename: '[name].js',
           chunkFilename: '[name].js',
-          publicPath: 'http://127.0.0.1:3000/admin/',
+          publicPath: 'http://127.0.0.1:4000/admin/',
           library: 'managePermission',
           libraryTarget: 'umd'
         }

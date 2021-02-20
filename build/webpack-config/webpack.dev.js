@@ -6,7 +6,7 @@ module.exports = {
   devServer: {
     compress: true,
     host: '127.0.0.1',
-    port: '3000',
+    port: '4000',
     hot: true,
     historyApiFallback: true,
     index: 'index.html',
