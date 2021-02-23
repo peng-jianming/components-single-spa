@@ -9,8 +9,7 @@ const appOptions = {
   // 挂载到父项目对应id中
   el: '#spa-container',
   render: h => h(App),
-  router,
-  abc: '123'
+  router
 };
 const vueLifecycles = singleSpaVue({
   Vue,

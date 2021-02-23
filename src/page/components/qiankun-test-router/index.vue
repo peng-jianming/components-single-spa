@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-alert title="路由跳转实践" type="info" center effect="dark" />
+    <el-alert title="微前端路由跳转实践" type="info" center effect="dark" />
     <div class="router-practice">
       <router-link to="/permission/manage/one" tag="span">
         <el-button type="primary">One-Component</el-button></router-link
