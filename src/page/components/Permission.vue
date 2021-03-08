@@ -73,8 +73,7 @@ export default {
       });
       if (data && data.code === 0) {
         this.dialogTableVisible = false;
-        this.$notify({
-          title: '成功',
+        this.$message({
           message: '更新成功',
           type: 'success'
         });

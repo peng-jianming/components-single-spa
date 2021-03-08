@@ -113,7 +113,9 @@ const baseConfig = {
   externals: {
     vue: 'Vue',
     'element-ui': 'ELEMENT',
-    'vue-router': 'VueRouter'
+    'vue-router': 'VueRouter',
+    _: 'lodash',
+    axios: 'axios'
   },
   stats: {
     colors: true,
