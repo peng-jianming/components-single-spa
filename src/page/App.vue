@@ -3,7 +3,7 @@
   <!-- 所以在入口最顶部添加对应id -->
   <div id="manage-permission-spa">
     <div>
-      <query-component @search="getAllUser" />
+      <query-component @search="getAllUser" @reset="reset" />
       <table-component :data="tableData" />
     </div>
     <el-divider></el-divider>
@@ -26,16 +26,17 @@ export default {
 
   data() {
     return {
-      tableData: []
+      tableData: [],
+      query: {}
     };
   },
   mounted() {
     this.getAllUser();
   },
   methods: {
-    async getAllUser(params) {
+    async getAllUser(query = this.query) {
       const { data } = await getAllUser({
-        query: params,
+        query,
         config: {
           headers: {
             Authorization: `Bearer ${this.$root.token}`
@@ -45,6 +46,10 @@ export default {
       if (data && data.code === 0) {
         this.tableData = data.data.data;
       }
+    },
+    reset() {
+      this.query = {};
+      this.getAllUser();
     }
   }
 };
